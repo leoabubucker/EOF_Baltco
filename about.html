@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <meta name="description" content="Electrify Our Future Baltimore County (EOFBaltco) is the Baltimore County chapter of the student-founded Maryland initiative to promote environmental sustainability through electrification.">
+    <title>About Us</title>
+</head>
+<body>
+    <nav class="nav-bar" id="mobile-nav" style="background-color: black; display: none;">
+        <div class="item left-side" id="lNav">
+            <a class='no-style-link' href="about.html">About Us</a>
+        </div>
+        <div class="item center"> 
+            <a class='no-style-link' href="committees.html">Commitee Applications</a>
+        </div>
+        <div class="item right-side" id="rNav" style="cursor:pointer">
+            <a class='no-style-link' onclick="togglePopup('popup-contact')">Contact Us</a>
+
+        </div>
+    </nav>
+    <div class="main-container" style="background-color: #2f4942"> <!-- rgb(4,7,32)-->
+
+            <nav class="nav-bar" id="nav">
+                <div class="item left-side" id="lNav">
+                    <a class='no-style-link' href="index.html" style="color:#fddd59">EOFBaltco</a> <!--#8EE3F5-->
+                </div>
+                <div class="item center" id="cNav" data-scroll="false" style="color:#fddd59"> <!--#8EE3F5--> 
+                    About Us
+                </div>
+                <div class="item right-side" id="rNav" style="cursor:pointer; color:#fddd59;" onclick="toggleMenu()"> <!--#8EE3F5-->
+                    Menu
+
+                </div>
+            </nav>
+            <div class="popup" id='popup-contact'>
+                <div class="overlay" onclick="togglePopup('popup-contact')"></div>
+                <div class="popup-content" id="popup-content" style="border-radius:12px;">
+                    <div class="close-btn" onclick="togglePopup('popup-contact')">
+                        &times;
+                    </div>
+                    <h1 style="font-size:20px; text-align:center;">Let's Talk</h1>
+                    <form style="margin-top:0%; margin-bottom:auto; margin-left: auto; margin-right:auto; " class="contact-form" action="https://formsubmit.co/eofbaltimorecounty@outlook.com" method="POST">
+                        <div>
+                            <input type="hidden" name="_subject" value="New Email!">
+                            <input type="hidden" name="_next" value="https://eofbaltco.netlify.app/form-success.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" style=" padding-left: 5px; width: 30vh; height: 5vh; font-size:15px;" name="name" placeholder="Name" required>
+                            <br><br>
+                            
+                            <input type="email" style="padding-left: 5px; width: 30vh; height: 5vh; font-size: 15px;" name="email" placeholder="Email Address" required>
+                            <br><br>
+
+                            <input type="text" style="padding-left: 5px; width: 30vh;height: 10vh; font-size: 15px; " name="message" placeholder="Message" required>
+                            <!-- <br><br>
+                            <form-label style="font-size: small;">
+                                <input type="checkbox" name="tos" required>
+                               I have read and agree to the <a class="no-style-link text-link" href="terms.html" target="_blank"> Terms of Service </a> 
+                            </form-label> -->
+                            <br><br>
+                            <form-label  style="font-size: small;">
+                                <input type="checkbox" name="privacy" required>
+                                I have read and agree to the <a class="no-style-link text-link" href="privacy-policy.html" target="_blank"> Privacy Policy </a> 
+                            </form-label>
+                            <br><br>
+                            <form-label style="font-size: small;">
+                                <input type="checkbox" name="coppa" required>
+                                I affirm that I am at least 13 years of age or have the consent of a parent/guardian (who has read and agreed to the <a class="no-style-link text-link" href="childrens-privacy-policy.html" target="_blank"> Children's Online Privacy Policy</a>) to submit this form.
+                            </form-label>
+                            <br><br>
+
+                        </div>
+        
+                        <button style="width: 20vh; height: 5vh;font-weight: 600;justify-content:center; font-size:15px;  background-color: #fddd59; color:#2f4942; cursor: pointer;" type="submit">Send</button>
+                        <h3>OR <br><br> Send us an email at <a class="no-style-link text-link" href="mailto:eofbaltimorecounty@outlook.com" target="_blank"> eofbaltimorecounty@outlook.com</a></h3>
+
+                    </form>   
+                    
+                </div>
+            </div>
+            <div class="content-page">
+                <a id="contactButton" class="contact-button" onclick="togglePopup('popup-contact')"> Let's Talk</a>
+                <aside class="sidebar" id="sideMenu">
+                    <ol class="hover-anim">
+                        <li><a class="no-style-link" href="index.html" style="color: #fddd59">Home</a></li><!--#8EE3F5-->
+                        <li><a class="no-style-link" href="about.html" style="color: #fddd59">About Us</a></li><!--#8EE3F5-->
+                        <li><a class="no-style-link" href="committees.html" style="color: #fddd59">Committee Applications</a></li><!--#8EE3F5-->
+                        <li><a class="no-style-link" onclick="togglePopup('popup-contact')"style="cursor: pointer; color:#fddd59" >Contact Us</a></li><!--#8EE3F5-->
+                    </ol>
+                </aside>
+                <div class="details" id="details" onclick="hideMenu()" style="display:grid;">
+                    <div class="detail detail1" id="detail1">
+                        <h1> About EOFBaltco </h1>
+                        <div class="underline lSlide-anim"></div>
+                        
+                    </div>
+                    <div class="detail detail2" style="color:ghostwhite;">
+                        <p><bold>What is EOF:</bold> Electrify Our Future is a coalition of students across the state of Maryland who work to advocate for sustainable development, environmental policy, and electrification, the process of switching from systems which use fossil fuels, to those which use renewable energy sources. We also work alongside CCAN, the Chesapeake Climate Action Network in advocacy projects. EOF started with a chapter in Howard County, and has expanded to chapters in other counties, including Baltimore County.</p>
+                        <br><br>
+                        <p><bold>What do we do:</bold> We’ve previously spearheaded advocacy for the Better Buildings Act (SB1023/HB1279), a Maryland General Assembly bill that would have required new building construction in Maryland to be electric as well as support future environmentally sustainable infrastructure such as electric vehicle (EV) chargers and solar panels. Now, we are looking to expand our outreach by advocating for broader environmental legislation, educating students across Baltimore County and the general public on environmental issues, and getting more students involved in environmental advocacy.</p>
+                    </div>
+                    <div class="detail detail3">
+                        <h1> Meet Our Leadership Team </h1>
+                        <div class="underline lSlide-anim"></div>
+                    </div>
+                    <div class="detail detail4 gridDetail" >
+                        <div class="detail4 subdetail" onmouseover="infoReveal(0)" onmouseleave="infoHide(0)">
+                            <div class="cover" style=" background-image:url('saan_rhyne.jpg'); background-size: cover;">
+                               
+                            </div>
+                            <div class="content" style="color:ghostwhite;">
+                                <p><bold>Saan Rhyne</bold> is an incoming freshman at Eastern Tech HS, enrolled in the Law & Public Policy program. He has been involved in student council and advocacy since 6th grade, currently serves on the Baltimore County Student Councils, and also serves as the Environmental Affairs Coordinator for the Maryland Association of Student Councils. Outside of student advocacy, he is interested in technology & cybersecurity, plays baseball, and practices martial arts.</p>
+                            </div>
+                        </div>
+                        <div class="detail4 subdetail" onmouseover="infoReveal(1)" onmouseleave="infoHide(1)">
+                            <div class="cover" style=" background-image:url('leo_abubucker.jpg'); background-size: cover;">
+                               
+                            </div>
+                            <div class="content"  style="color:ghostwhite;">
+                                <p><bold>Leo Abubucker</bold> is a rising senior at Towson HS. He has participated in student leadership for four years, currently serving as the Environmental Committee chair on the Baltimore County Student Councils' Executive Board as well as a workshop presenter and an Environmental Affairs Committee Member for the Maryland Association of Student Councils. Outside of student advocacy, he is deeply passionate about programming and engineering, being the club president of Towson HS' robotics team and doing personal projects such as this website. He also enjoys biking, swimming, and lifeguarding!</p>
+                            </div>
+                        </div>
+                        <div class="detail4 subdetail" onmouseover="infoReveal(2)" onmouseleave="infoHide(2)">
+                            <div class="cover" style=" background-image:url('brahnan_greben.PNG'); background-size: cover;">
+                               
+                            </div>
+                            <div class="content"  style="color:ghostwhite;">
+                                <bold>Brahnan Greben</bold> is a rising senior at Towson HS. He has participated in student advocacy for four years, currently serving as a Central Regional Representative on the Baltimore
+                                County
+                                Student Councils'
+                                Executive Board as well as a workshop presenter. Otherwise, Brahnan is an active leader within the Towson Model United Nations and Morning Announcements clubs. In his free time, Brahnan enjoys walking his dog, cooking and learning about geography.
+                                                            </div>
+                        </div>
+
+                        <!-- <div class="detail4 subdetail" onmouseover="infoReveal(3)" onmouseleave="infoHide(3)">
+                            <div class="cover" >
+                                <h1>Lexi Sperry</h1>
+                            </div>
+                            <div class="content"  style="color:ghostwhite;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div> -->
+                    </div>
+                    
+                     <!-- <div class="detail detail5 gridDetail" >
+                        <div class="detail5 subdetail" onmouseover="infoReveal(3)" onmouseleave="infoHide(3)">
+                            <div class="cover" >
+                                <h1>Smooth Animation</h1>
+                            </div>
+                            <div class="content">
+                               <p>While all websites are different, most modern websites feature clean animations to increase user awareness and retention.
+                                <br><br>
+                                That's why Lyka will incorporate subtle but crucial JS and CSS based animations to make your website just that much better.</p>
+                            </div>
+                        </div>
+                        <div class="detail5 subdetail" onmouseover="infoReveal(4)" onmouseleave="infoHide(4)">
+                            <div class="cover" >
+                                <h1>High Quality Visuals</h1>
+                            </div>
+                            <div class="content">
+                               <p>Lyka procures high quality and relevant visuals to supplement the text information on your website.
+                                <br><br>
+                                Additionally, Lyka allows our clients to send us visuals and we will expertly fit them in to the website.</p>   
+                            </div>
+                        </div>
+                        <div class="detail5 subdetail" onmouseover="infoReveal(5)" onmouseleave="infoHide(5)">
+                            <div class="cover" >
+                                <h1>Free Hosting</h1>
+                            </div>
+                            <div class="content">
+                               <p>At Lyka, we understand that you most likely will not have a domain, but you want to quickly make your website public.
+                                <br><br>
+                                While we highly recommend you purchase a domain to make your website more professional, we will host your website for free on the Netlify domain (.netlify.app) until a domain is purchased.</p>
+                            </div>
+                        </div> -->
+
+                            
+                        <!-- </div> -->
+                        <div class="detail detail6">
+                            <h1> What We've Done </h1>
+                            <div class="underline lSlide-anim"></div>
+                        </div>
+                        <div class="detail detail7 accomplishment" id="accomplishment1">
+                            <div class="accomplishment-arrow" style="background-image: url('left-arrow2.png');" onclick="prevAccomplishment()">
+                            </div>
+                            <div class="accomplishment-content" style="display:none;">
+                                <p> 
+                                    Our team went in-person to the Maryland General Assembly to provide testimony for HB1279 to the House Environment and Transportation Committee.
+                                    <br><br>
+                                <bold> March 6, 2024 @ Maryland General Assembly</bold>
+                                </p>
+                            </div>
+
+                            <div class="accomplishment-content" style="display:none;">
+                                <p> 
+                                    Our team went in-person to the Maryland General Assembly to provide testimony for SB1023 to the Senate Education, Energy, and the Environment Committee.
+                                    <br><br>
+                                <bold> March 4, 2024 @ Maryland General Assembly</bold>
+                                </p>
+                            </div>
+
+                            <div class="accomplishment-content" style="display:none;">
+                                <p> 
+                                    Members of our team who also sit on the Baltimore County Student Councils (BCSC) Executive Board successfully got BCSC legislation passed to officially have BCSC support SB1023/HB1279.
+                                    <br><br>
+                                <bold> February 7, 2024 @ Baltimore County Student Councils Executive Board Meeting</bold>
+                                </p>
+                            </div>
+
+                            <div class="accomplishment-content" style="display:none;">
+                                <p> 
+                                    Our team decided to focus our electrification efforts on advocating for the passage of the 2024 Maryland Better Buildings Act (SB1023/HB1279) which would require new buildings to not use fossil fuels and have certain sustainable infrastructure such as EV chargers and solar panels.
+                                    <br><br>
+                                <bold> January 8, 2024</bold>
+                                </p>
+                            </div>
+                            <div class="accomplishment-arrow" style="background-image: url('right-arrow2.png');" onclick="nextAccomplishment()">
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <footer>
+
+                <div class="item logo" style="grid-row: span 2;">
+                    <img src="EOF_Baltco_Logo.png">
+                </div>
+                <div class="item company">
+                    <h1 style="color:#fddd59"> Electrify Our Future <br> Baltimore County</h1>
+                    <p>Copyright © 2024 Electrify Our Future Baltimore County</p>
+                    <p>Developed By Leo Abubucker</p>
+                </div>
+    
+                <div class="item placeholder"></div>
+                <div class="item placeholder"></div>
+                <div class="item lHeader" >
+                    <h3 style="color: #fddd59;"> Links </h3>
+                </div>
+    
+                <div class=" item instagram">
+                    <p class="text-link" onclick="window.open('https://www.instagram.com/eof.baltco')"> Instagram </p>
+                </div>
+    
+                <div class=" item fiverr">
+                    <p class="text-link" onclick="window.open('https://linktr.ee/eof.baltco')"> Linktree </p>
+                </div> 
+                <div class="item placeholder"></div>
+                <div class="item placeholder"></div>
+                
+                <div class="item cHeader">
+                    <h3 style="color:#fddd59;"> Legal </h3>
+                </div>
+    
+                <div class=" item privacy">
+                    <p class="text-link" onclick="window.open('privacy-policy.html')"> Privacy Policy </p>
+                </div> 
+     
+                <div class="item childrensPrivacy">
+                    <p class="text-link" onclick="window.open('childrens-privacy-policy.html')"> Children's Online Privacy Policy </p>              
+                </div>
+                <div class=" item tos">
+                    <!-- <p class="text-link" onclick="window.open('terms.html')"> Terms of Service </p> -->
+                </div> 
+                <div class="item placeholder"></div>
+    
+                <div class="item rHeader">
+                    <h3 style="color:#fddd59;"> Navigation </h3>
+                </div>
+                <div class=" item home">
+                    <p class="text-link" onclick="window.location.href='index.html';"> Home</p>
+                </div> 
+                <div class=" item about">
+                    <p class="text-link" onclick="window.location.href='about.html';"> About Us </p>
+                </div> 
+                <div class=" item services">
+                    <p class="text-link" onclick="window.location.href='committees.html';"> Committee Applications</p>
+                </div> 
+                <div class=" item contact">
+                    <p class="text-link" onclick="togglePopup('popup-contact')"> Contact Us </p>
+                </div> 
+            </footer>
+    </div>
+</body>
+</html>
+<script src="general.js"></script>
+<script src="devicecheck.js"></script>
+<script src="accomplishmentCarousel.js"></script>
+<script>
+    if (isMobile || isTablet){
+        document.getElementById('nav').style.display = "none";
+        document.getElementById('detail1').style.marginTop = "20px";
+        document.getElementById("contactButton").dataset.mobile = "true";
+        // document.getElementsByTagName('footer')[0].dataset.mobile = "true";
+        document.getElementById('details').style.display = "block";
+        document.getElementById('accomplishment1').style.width = "90vw";
+    }
+</script>

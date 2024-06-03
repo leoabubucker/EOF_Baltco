@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <meta name="description" content="Attention Baltimore County 6-12 grade students. Join one of our committees today to earn leadership experience and help the environment.">
+    <title>Committee Applications</title>
+</head>
+<body>
+    <nav class="nav-bar" id="mobile-nav" style="background-color: black; display: none;">
+        <div class="item left-side" id="lNav">
+            <a class='no-style-link' href="index.html">Home</a>
+        </div>
+        <div class="item center"> 
+            <a class='no-style-link' href="about.html">About Us</a>
+        </div>
+        <div class="item right-side" id="rNav" style="cursor:pointer">
+            <a class='no-style-link' onclick="togglePopup('popup-contact')">Contact Us</a>
+
+        </div>
+    </nav>
+    <div class="main-container" style="background-color: #2f4942;">
+            <nav class="nav-bar" id="nav">
+                <div class="item left-side" id="lNav">
+                    <a class='no-style-link' href="index.html" style="color: #fddd59">EOFBaltco</a>
+                </div>
+                <div class="item center" id="cNav" data-scroll="false" style="color: #fddd59">
+                    Committee Applications
+                </div>
+                <div class="item right-side" id="rNav" style="cursor:pointer; color:#fddd59;" onclick="toggleMenu()"  >
+                    Menu
+
+                </div>
+            </nav>
+            <div class="popup" id='popup-contact'>
+                <div class="overlay" onclick="togglePopup('popup-contact')"></div>
+                <div class="popup-content" id="popup-content" style="border-radius:12px;">
+                    <div class="close-btn" onclick="togglePopup('popup-contact')">
+                        &times;
+                    </div>
+                    <h1 style="font-size:20px; text-align:center;">Let's Talk</h1>
+                    <form style="margin-top:0%; margin-bottom:auto; margin-left: auto; margin-right:auto; " class="contact-form" action="https://formsubmit.co/eofbaltimorecounty@outlook.com" method="POST">
+                        <div>
+                            <input type="hidden" name="_subject" value="New Email!">
+                            <input type="hidden" name="_next" value="https://eofbaltco.netlify.app/form-success.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" style=" padding-left: 5px; width: 30vh; height: 5vh; font-size:15px;" name="name" placeholder="Name" required>
+                            <br><br>
+                            
+                            <input type="email" style="padding-left: 5px; width: 30vh; height: 5vh; font-size: 15px;" name="email" placeholder="Email Address" required>
+                            <br><br>
+
+                            <input type="text" style="padding-left: 5px; width: 30vh;height: 10vh; font-size: 15px; " name="message" placeholder="Message" required>
+                            <!-- <br><br>
+                            <form-label style="font-size: small;">
+                                <input type="checkbox" name="tos" required>
+                               I have read and agree to the <a class="no-style-link text-link" href="terms.html" target="_blank"> Terms of Service </a> 
+                            </form-label> -->
+                            <br><br>
+                            <form-label  style="font-size: small;">
+                                <input type="checkbox" name="privacy" required>
+                                I have read and agree to the <a class="no-style-link text-link" href="privacy-policy.html" target="_blank"> Privacy Policy </a> 
+                            </form-label>
+                            <br><br>
+                            <form-label style="font-size: small;">
+                                <input type="checkbox" name="coppa" required>
+                                I affirm that I am at least 13 years of age or have the consent of a parent/guardian (who has read and agreed to the <a class="no-style-link text-link" href="childrens-privacy-policy.html" target="_blank"> Children's Online Privacy Policy</a>) to submit this form.
+                            </form-label>
+                            <br><br>
+
+                        </div>
+        
+                        <button style="width: 20vh; height: 5vh;font-weight: 600;justify-content:center; font-size:15px;  background-color: #fddd59; color:#2f4942; cursor: pointer;" type="submit">Send</button>
+                        <h3>OR <br><br> Send us an email at <a class="no-style-link text-link" href="mailto:eofbaltimorecounty@outlook.com" target="_blank"> eofbaltimorecounty@outlook.com</a></h3>
+
+                    </form>   
+                </div>
+            </div>
+            <div class="content-page">
+                <a id="contactButton" class="contact-button" onclick="togglePopup('popup-contact')"> Let's Talk</a>
+                <aside class="sidebar" id="sideMenu">
+                    <ol class="hover-anim">
+                        <li><a class="no-style-link" href="index.html">Home</a></li>
+                        <li><a class="no-style-link" href="about.html">About Us</a></li>
+                        <li><a class="no-style-link" href="committees.html">Committee Applications</a></li>
+                        <li><a class="no-style-link" onclick="togglePopup('popup-contact')" style="cursor: pointer;">Contact Us</a></li>
+                    </ol>
+                </aside>
+                <div class="details" onclick="hideMenu()">
+                    <div class="detail detail1" id="detail1">
+                        <h1> Our Committees </h1>
+                        <div class="underline lSlide-anim"></div>
+                        
+                    </div>
+                    <div class="detail detail2">
+                        <ul style="color:ghostwhite; line-height: 5vh;"> 
+                            <li> <bold>Legislative</bold> - This committee will focus on working with county and state legislators to create environmentally sustainable bills as well as monitoring potential legislation to either advocate for or against it.</li> 
+                            <li> <bold>Outreach</bold> - This committee will focus on working with the general public, especially students of all ages, to teach them about the environment, electrification, promoting sustainability, and more.</li> 
+                            <li> <bold>Advertising</bold> - This committee will focus on advertising EOFBaltco to potential members (middle and high school students across the county) and the general public.</li> 
+                        </ul>
+                    </div>
+                    <div class="detail detail3">
+                        <h1> Application Process </h1>
+                        <div class="underline lSlide-anim"></div>
+                    </div>
+                    <div class="detail detail4" >
+                        <ol style="color:ghostwhite; line-height: 5vh;"> 
+                            <li> You must be <bold>a middle or high school student</bold> that lives in Baltimore County. It does not matter if you go to a public school, private school, or are homeschooled.</li> 
+                            <li> Use a personal account (school accounts may restrict access) to complete the <bold>Google Form Application</bold> and that's it!</li>  
+                        </ol>
+                        <p>Applications Accepted on a Rolling Basis!</p>
+                    </div>
+
+                    <div class="detail detail5">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsKv5_Y78h9wvxVTJOkhlzbpyLzIiphQnDbvxWDlh_VLtmLg/viewform" width="1200" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                    </div>
+                    
+                     <!-- <div class="detail detail5 gridDetail" >
+                        <div class="detail5 subdetail" onmouseover="infoReveal(0)" onmouseleave="infoHide(0)">
+                            <div class="cover" >
+                                <h1>Basic $250</h1>
+                            </div>
+                            <div class="content">
+                               <p>Full design customization. Eye-catching design. Up to 2 pages. 2 week delivery time. 2 week free support*. User-friendly contact form.</p>
+                            </div>
+                        </div>
+                        <div class="detail5 subdetail" onmouseover="infoReveal(1)" onmouseleave="infoHide(1)">
+                            <div class="cover" >
+                                <h1>Standard $500</h1>
+                            </div>
+                            <div class="content">
+                               <p>Everything in the Basic Plan but more:
+                                <br><br>
+                                Up to 5 pages. JavaScript animations. Desktop responsive design. 4 week delivery time. 4 week free support*.</p>   
+                            </div>
+                        </div>
+                        <div class="detail5 subdetail" onmouseover="infoReveal(2)" onmouseleave="infoHide(2)">
+                            <div class="cover" >
+                                <h1>Premium $1000</h1>
+                            </div>
+                            <div class="content">
+                               <p>Everything in the Standard Plan but even more:
+                                <br><br>
+                                Up to 10 pages. Full responsive design (including mobile). 8 week delivery time. 8 week free support*.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail detail6" >
+                        <p style="text-align: justify;">
+                        *Free support is defined as small maintenance changes to the text or other already present aspects of the website. Free support does not include the addition of new aspects. Whether a task is considered free support is at sole discretion of Lyka.
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+
+            <footer>
+
+                <div class="item logo" style="grid-row: span 2;">
+                    <img src="EOF_Baltco_Logo.png">
+                </div>
+                <div class="item company">
+                    <h1 style="color:#fddd59"> Electrify Our Future <br> Baltimore County</h1>
+                    <p>Copyright © 2024 Electrify Our Future Baltimore County</p>
+                    <p>Developed By Leo Abubucker</p>
+                </div>
+    
+                <div class="item placeholder"></div>
+                <div class="item placeholder"></div>
+                <div class="item lHeader" >
+                    <h3 style="color: #fddd59;"> Links </h3>
+                </div>
+    
+                <div class=" item instagram">
+                    <p class="text-link" onclick="window.open('https://www.instagram.com/eof.baltco')"> Instagram </p>
+                </div>
+    
+                <div class=" item fiverr">
+                    <p class="text-link" onclick="window.open('https://linktr.ee/eof.baltco')"> Linktree </p>
+                </div> 
+                <div class="item placeholder"></div>
+                <div class="item placeholder"></div>
+                
+                <div class="item cHeader">
+                    <h3 style="color:#fddd59;"> Legal </h3>
+                </div>
+    
+                <div class=" item privacy">
+                    <p class="text-link" onclick="window.open('privacy-policy.html')"> Privacy Policy </p>
+                </div> 
+     
+                <div class="item childrensPrivacy">
+                    <p class="text-link" onclick="window.open('childrens-privacy-policy.html')"> Children's Online Privacy Policy </p>              
+                </div>
+                <div class=" item tos">
+                    <p class="text-link" onclick="window.open('terms.html')"> Terms of Service </p>
+                </div> 
+                <div class="item placeholder"></div>
+    
+                <div class="item rHeader">
+                    <h3 style="color:#fddd59;"> Navigation </h3>
+                </div>
+                <div class=" item home">
+                    <p class="text-link" onclick="window.location.href='index.html';"> Home</p>
+                </div> 
+                <div class=" item about">
+                    <p class="text-link" onclick="window.location.href='about.html';"> About Us </p>
+                </div> 
+                <div class=" item services">
+                    <p class="text-link" onclick="window.location.href='committees.html';"> Committee Applications</p>
+                </div> 
+                <div class=" item contact">
+                    <p class="text-link" onclick="togglePopup('popup-contact')"> Contact Us </p>
+                </div> 
+            </footer>
+    </div>
+</body>
+</html>
+<script src="general.js"></script>
+<script src="devicecheck.js"></script>
+<script>
+    if (isMobile || isTablet){
+        document.getElementById('nav').style.display = "none";
+        document.getElementById('detail1').style.marginTop = "20px";
+        document.getElementById("contactButton").dataset.mobile = "true";
+        document.getElementsByTagName('footer')[0].dataset.mobile = "true";
+    }
+</script>

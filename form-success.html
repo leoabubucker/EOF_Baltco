@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Form Submitted</title>
+</head>
+<body onload="togglePopup('popup-contact')">
+    <nav class="nav-bar" id="mobile-nav" style="background-color: black; display: none;">
+        <div class="item left-side" id="lNav">
+            <a class='no-style-link' href="index.html">Home</a>
+        </div>
+        <div class="item center"> 
+            <a class='no-style-link' href="committees.html">Committee Applications</a>
+        </div>
+        <div class="item right-side" id="rNav" style="cursor:pointer">
+            <a class='no-style-link' onclick="togglePopup('popup-contact')">Contact Us</a>
+
+        </div>
+    </nav>
+    <div class="main-container" style="background-color: rgb(4, 7, 32)">
+
+            <div class="popup" id='popup-contact' >
+                <div class="overlay" onclick="togglePopup('popup-contact')"></div>
+                <div class="popup-content" id="popup-content" style="border-radius:12px;">
+                    <div class="close-btn" onclick="window.location.href = 'index.html';">
+                        &times;
+                    </div>
+                    <h1 style="font-size:20px; text-align:center;">Thank You</h1>
+                    <p style="font-size: large;"> Please expect an email within 48 hours from <br><br> <bold><a class="no-style-link text-link" href="mailto:eofbaltimorecounty@outlook.com" target="_blank"> eofbaltimorecounty@outlook.com</a></bold><br><br>
+                    Make sure to check your junk/spam folder and add this email to your contacts.
+                    </p>
+                    <button style="width: 20vh; height: 5vh;font-weight: 600;justify-content:center; font-size:15px; background-color: #fddd59; color:#2f4942; cursor: pointer;"  onclick="window.location.href = 'index.html';">Return Home</button>
+              
+                    
+                </div>
+                <div class="landing-page">
+                    <div id="tiles" class="background" style="background-color: #2f4942"> <!--rgb(4,7,32)-->
+    
+                    </div>
+                    
+                    <aside class="sidebar hover-anim" id="home-sidebar">
+                        <ol>
+                            <li><a class="no-style-link" href="about.html" style="color: #fddd59">About Us</a></li> <!--#8EE3F5-->
+                            <li><a class="no-style-link" href="committees.html" style="color: #fddd59;">Committee Applications</a></li> <!--#8EE3F5-->
+                            <li><a class="no-style-link" onclick="togglePopup('popup-contact')"style="cursor: pointer; color: #fddd59;" >Contact Us</a></li> <!--#8EE3F5-->
+                        </ol>
+                    </aside>
+                    <div class="fadeIn-anim title-content">
+                        <h1 style="color:#fddd59;"> Electrify Our Future - Baltimore County Chapter </h1> <!--#8EE3F5-->
+                    </div>
+                </div>
+    </div>
+</body>
+</html>
+
+<script src="general.js"></script>
+<script src="tiles.js"></script>
+<script src="devicecheck.js"></script>
+<script>
+    if (isMobile || isTablet){
+        document.getElementById('home-sidebar').style.display = "none";
+    }
+</script>
