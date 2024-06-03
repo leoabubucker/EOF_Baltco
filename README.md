@@ -1,5 +1,5 @@
-# Lyka-Website
-Repository for the Lyka Website. Developed by Lyka Web Development
+# EOF_Baltco
+Repository for the Electrify Our Future Baltimore County Chapter Website. Developed by Leo Abubucker
 
 Feedback, Questions and Comments can be sent to: leokumar@outlook.com
 
