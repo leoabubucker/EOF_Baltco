@@ -17,7 +17,7 @@
 <body>
     <nav class="nav-bar" id="mobile-nav" style="background-color: black; display: none;">
         <div class="item left-side" id="lNav">
-            <a class='no-style-link' href="about.html">About Us</a>
+            <a class='no-style-link' href="index.html">Home</a>
         </div>
         <div class="item center"> 
             <a class='no-style-link' href="committees.html">Commitee Applications</a>
@@ -189,7 +189,7 @@
                             <h1> What We've Done </h1>
                             <div class="underline lSlide-anim"></div>
                         </div>
-                        <div class="detail detail7 accomplishment" id="accomplishment1">
+                        <div class="detail detail7 accomplishment" id="accomplishment">
                             <div class="accomplishment-arrow" style="background-image: url('left-arrow2.png');" onclick="prevAccomplishment()">
                             </div>
                             <div class="accomplishment-content" style="display:none;">
@@ -302,6 +302,8 @@
         document.getElementById("contactButton").dataset.mobile = "true";
         // document.getElementsByTagName('footer')[0].dataset.mobile = "true";
         document.getElementById('details').style.display = "block";
-        document.getElementById('accomplishment1').style.width = "90vw";
+        document.getElementById('accomplishment').style.width = "90vw";
+        document.getElementsByTagName('footer')[0].dataset.mobile = "true";
+        document.getElementById("accomplishment").style.height = "45vh !important";
     }
 </script>

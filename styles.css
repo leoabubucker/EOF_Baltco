@@ -306,6 +306,17 @@ footer .tos{
     /* border-top-right-radius: 100px; */
     /* border-bottom-right-radius: 100px; */
 }
+
+.detail2 li, .detail4 li{
+    margin-bottom: 10px;
+}
+
+.detail5 iframe[data-mobile = "true"]{
+    display:none !important;
+}
+.detail5 h3[data-mobile = "true"]{
+    display:block !important;
+}
 /* .subdetail[data-mobile = "true"]{
     width:90vw !important;
     height:unset !important;

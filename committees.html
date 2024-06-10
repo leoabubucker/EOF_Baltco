@@ -101,8 +101,8 @@
                         <div class="underline lSlide-anim"></div>
                         
                     </div>
-                    <div class="detail detail2">
-                        <ul style="color:ghostwhite; line-height: 5vh;"> 
+                    <div class="detail detail2" id="detail2">
+                        <ul style="color:ghostwhite;"> 
                             <li> <bold>Legislative</bold> - This committee will focus on working with county and state legislators to create environmentally sustainable bills as well as monitoring potential legislation to either advocate for or against it.</li> 
                             <li> <bold>Outreach</bold> - This committee will focus on working with the general public, especially students of all ages, to teach them about the environment, electrification, promoting sustainability, and more.</li> 
                             <li> <bold>Advertising</bold> - This committee will focus on advertising EOFBaltco to potential members (middle and high school students across the county) and the general public.</li> 
@@ -113,15 +113,17 @@
                         <div class="underline lSlide-anim"></div>
                     </div>
                     <div class="detail detail4" >
-                        <ol style="color:ghostwhite; line-height: 5vh;"> 
+                        <ol style="color:ghostwhite;"> 
                             <li> You must be <bold>a middle or high school student</bold> that lives in Baltimore County. It does not matter if you go to a public school, private school, or are homeschooled.</li> 
-                            <li> Use a personal account (school accounts may restrict access) to complete the <bold>Google Form Application</bold> and that's it!</li>  
+                            <li> Use a personal account (school accounts may restrict access) to complete the <bold><a class="no-style-link" href="https://forms.gle/epGBWQ7FB9aV3t9q6" target="_blank">Google Form Application</a></bold> and that's it!</li>  
                         </ol>
                         <p>Applications Accepted on a Rolling Basis!</p>
                     </div>
 
                     <div class="detail detail5">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsKv5_Y78h9wvxVTJOkhlzbpyLzIiphQnDbvxWDlh_VLtmLg/viewform" width="1200" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                    </div>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsKv5_Y78h9wvxVTJOkhlzbpyLzIiphQnDbvxWDlh_VLtmLg/viewform" width="1200" height="720" frameborder="0" marginheight="0" marginwidth="0" id="desktopFormEmbed">Loading…</iframe>               
+                         <h3 id="mobileFormLink" style="display:none; text-decoration: underline;"><a class="no-style-link" href="https://forms.gle/epGBWQ7FB9aV3t9q6" target="_blank">https://forms.gle/epGBWQ7FB9aV3t9q6</a></h3>
+                    </div>
                     
                      <!-- <div class="detail detail5 gridDetail" >
                         <div class="detail5 subdetail" onmouseover="infoReveal(0)" onmouseleave="infoHide(0)">
@@ -231,5 +233,7 @@
         document.getElementById('detail1').style.marginTop = "20px";
         document.getElementById("contactButton").dataset.mobile = "true";
         document.getElementsByTagName('footer')[0].dataset.mobile = "true";
+        document.getElementById('desktopFormEmbed').dataset.mobile = "true";
+        document.getElementById('mobileFormLink').dataset.mobile = "true";
     }
 </script>
